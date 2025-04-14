@@ -1,0 +1,135 @@
+:root {
+    /* Tema Claro */
+    --bg-color: #f0f8ff; /* Azul claro */
+    --container-bg: #ffffff; /* Branco */
+    --text-color: #333333; /* Cinza escuro */
+    --primary-color: #006400; /* Verde escuro */
+    --secondary-color: #add8e6; /* Azul claro para números */
+    --selected-color: #32cd32; /* Verde lima para selecionados */
+    --button-bg: #a9a9a9; /* Cinza */
+    --button-enabled-bg: #006400; /* Verde escuro */
+    --button-hover-bg: #004d00; /* Verde mais escuro */
+    --result-bg: #e0ffff; /* Azul claro */
+    --result-border: #87ceeb; /* Azul céu */
+    --message-color: #ff4500; /* Laranja */
+    --numero-border: #87ceeb; /* Borda azul céu para tema claro */
+}
+body.dark-theme {
+    /* Tema Escuro */
+    --bg-color: #333333; /* Cinza escuro */
+    --container-bg: #444444; /* Cinza mais claro */
+    --text-color: #f0f8ff; /* Azul claro */
+    --primary-color: #32cd32; /* Verde lima */
+    --secondary-color: #555555; /* Cinza escuro para números */
+    --selected-color: #32cd32; /* Verde lima para selecionados */
+    --button-bg: #666666; /* Cinza médio */
+    --button-enabled-bg: #32cd32; /* Verde lima */
+    --button-hover-bg: #228b22; /* Verde floresta */
+    --result-bg: #555555; /* Cinza escuro */
+    --result-border: #87ceeb; /* Azul céu */
+    --message-color: #ff4500; /* Laranja */
+    --numero-border: #666666; /* Borda cinza para tema escuro */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--container-bg);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+p {
+    text-align: center;
+    color: var(--text-color);
+}
+
+.cartela {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.numero {
+    padding: 10px;
+    background-color: var(--secondary-color);
+    text-align: center;
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;
+    user-select: none;
+    color: var(--text-color);
+    border: 1px solid var(--numero-border); /* Borda para separar os números */
+}
+
+.numero.selecionado {
+    background-color: var(--selected-color);
+    color: white;
+}
+
+#apostaBtn {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: not-allowed;
+    font-size: 16px;
+}
+
+#apostaBtn.enabled {
+    background-color: var(--button-enabled-bg);
+    cursor: pointer;
+}
+
+#apostaBtn.enabled:hover {
+    background-color: var(--button-hover-bg);
+}
+.hidden {
+    display: none;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid var(--result-border);
+    border-radius: 4px;
+    background-color: var(--result-bg);
+}
+
+#resultado p {
+    margin: 5px 0;
+    color: var(--text-color);
+}
+
+#mensagem {
+    font-weight: bold;
+    color: var(--message-color);
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jogo da Mega Sena</title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+        />
+    </head>
+    <body class="light-theme">
+        <div class="container">
+            <button id="themeToggle" class="theme-toggle">
+                <i class="bi bi-moon"></i>
+                <!-- Ícone inicial: lua para tema escuro -->
+            </button>
+            <h1>Jogo da Mega Sena</h1>
+            <p>
+                Selecione 6 números entre 1 e 60 clicando na cartela abaixo.
+                Clique novamente em um número para desmarcá-lo.
+            </p>
+            <div class="cartela">
+                <!-- Números de 1 a 60 serão gerados via JavaScript -->
+            </div>
+            <button id="apostaBtn" disabled>Fazer Aposta</button>
+            <div id="resultado" class="hidden">
+                <h2>Resultado do Sorteio</h2>
+                <p>Números sorteados: <span id="sorteio"></span></p>
+                <p>Sua aposta: <span id="aposta"></span></p>
+                <p>Número de acertos: <span id="acertos"></span></p>
+                <p id="mensagem"></p>
+            </div>
+        </div>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

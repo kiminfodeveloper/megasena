@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author kimde
- *
- */
-module FederalLoteria {
-}
