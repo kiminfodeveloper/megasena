@@ -7,7 +7,7 @@ Bem-vindo ao repositório do Jogo da Mega Sena, um projeto web interativo e visu
 ![PortfolioPreview](./images/preview1.png)
 ![PortfolioPreview2](./images/preview2.png)
 
-## Acesse ➡️ https://kiminfodeveloper.github.io/portfolioDev/index.html
+## Acesse ➡️ https://kiminfodeveloper.github.io/megasena/
 
 ## ✨ Funcionalidades
 
